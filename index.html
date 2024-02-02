@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,22 +66,16 @@
       color: #555; /* Dark gray color for text */
     }
 
-    .project-details {
-      margin-top: 20px;
+    /* Rounded profile image */
+    .profile-image {
+      text-align: center;
+      margin-bottom: 20px;
     }
 
-    .project-details p {
-      margin-bottom: 5px;
-    }
-
-    /* CSS for skill ratings */
-    .star {
-      cursor: pointer;
-      color: #ddd; /* Light gray color for unselected stars */
-    }
-
-    .star.active {
-      color: #ff8a65; /* Lighter orange color for active stars */
+    .profile-image img {
+      border-radius: 70%;
+      width: 200px; /* Adjust size as needed */
+      height: 200px; /* Adjust size as needed */
     }
   </style>
 </head>
@@ -111,32 +104,27 @@
           <div class="grid-item">
             <p>Problem-Solving</p>
             <div class="skill-rating" data-rating="0">
-              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
             </div>
             <p>Decision-Making</p>
             <div class="skill-rating" data-rating="0">
-              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
             </div>
             <p>Planning and Coordination</p>
             <div class="skill-rating" data-rating="0">
-              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
             </div>
             <p>Team-Building</p>
             <div class="skill-rating" data-rating="0">
-              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
             </div>
             <p>Active-Listening</p>
             <div class="skill-rating" data-rating="0">
-              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
             </div>
           </div>
-          <!-- Add more skills with ratings -->
+          
         </div>
       </div>
       <div class="right-column">
         <div class="summary section">
           <h2>Professional Summary:</h2>
-          <p>Recent Computer Science graduate with a strong academic background in Computers and Mathematics. Eager to apply theoretical knowledge gained through coursework and projects to contribute effectively in a professional setting. Proficient in Web Development, Python, and Databases with a keen ability to learn and adapt quickly. Excellent communication, analytical, problem-solving skills coupled with a strong work ethic and a passion towards work. Seeking an opportunity to kickstart a successful career and make meaningful contributions.</p>
+          <p> Computer Science graduate with a strong academic background in Computers and Mathematics. Eager to apply theoretical knowledge gained through coursework and projects to contribute effectively in a professional setting. Proficient in Web Development, Python, and Databases with a keen ability to learn and adapt quickly. Excellent communication, analytical, problem-solving skills coupled with a strong work ethic and a passion towards work. Seeking an opportunity to kickstart a successful career and make meaningful contributions.</p>
         </div>
         <div class="education section">
           <h2>Education:</h2>
@@ -159,26 +147,5 @@
       </div>
     </div>
   </div>
-  <script>
-    // Get all the skill rating elements
-    const skillRatings = document.querySelectorAll('.skill-rating');
-
-    // Add click event listeners to each skill rating element
-    skillRatings.forEach(skillRating => {
-      const stars = skillRating.querySelectorAll('.star');
-      stars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-          // Remove active class from all stars
-          stars.forEach(s => s.classList.remove('active'));
-          // Add active class to clicked star and all previous stars
-          for (let i = 0; i <= index; i++) {
-            stars[i].classList.add('active');
-          }
-          // Set data-rating attribute to the index of the clicked star + 1
-          skillRating.setAttribute('data-rating', index + 1);
-        });
-      });
-    });
-  </script>
 </body>
 </html>
