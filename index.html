@@ -4,36 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Mokshagna Talapaneni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #f5f5f5; /* Light gray background */
+      background-color: #f2f2f2; /* Lighter gray background */
     }
 
     .container {
       width: 800px;
       margin: 50px auto;
-      background-color: #fff;
+      background-color: #ffffff; /* White background */
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       padding: 20px;
     }
 
     .nav-bar {
-      background-color: #ffccbc; /* Light peach color for navigation bar */
-      color: #333;
+      background-color: #8187ac; /* Dark indigo color for navigation bar */
+      color: #ffffff; /* White text */
       padding: 10px 20px;
       text-align: center;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-    }
-
-    .nav-bar h1 {
-      margin: 0;
-      font-size: 24px;
     }
 
     .grid {
@@ -42,13 +39,13 @@
     }
 
     .left-column {
-      background-color: #ffd8c8; /* Light salmon color for left column */
+      background-color: #d9d9d9; /* Lighter gray for left column */
       padding: 20px;
-      border-right: 2px solid #ffccbc; /* Light peach color for border */
+      border-right: 2px solid #bdbdbd; /* Even lighter gray border */
     }
 
     .right-column {
-      background-color: #fff3e0; /* Light orange color for right column */
+      background-color: #d9d9d9; /* Lighter gray for right column */
       padding: 20px;
     }
 
@@ -57,13 +54,18 @@
     }
 
     h2 {
-      color: #ff8a65; /* Lighter orange color for section headings */
+      color: #00adb5; /* Teal color for section headings */
+      margin-bottom: 10px;
+    }
+    
+    h3 {
+      color: #424242; /* Dark gray color for subsection headings */
       margin-bottom: 10px;
     }
 
     p {
       margin-bottom: 10px;
-      color: #555; /* Dark gray color for text */
+      color: #414040; /* Slightly darker gray color for text */
     }
 
     /* Rounded profile image */
@@ -73,11 +75,38 @@
     }
 
     .profile-image img {
-      border-radius: 70%;
-      width: 200px; /* Adjust size as needed */
-      height: 200px; /* Adjust size as needed */
+      border-radius: 50%; /* Circular profile image */
+      width: 200px;
+      height: 200px;
     }
-  </style>
+
+    .expertise {
+      margin-bottom: 20px;
+    }
+    
+    .expertise h2 {
+      color: #00adb5; /* Teal color for expertise section heading */
+      margin-bottom: 10px;
+    }
+    
+    .expertise ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .expertise li {
+      margin-bottom: 5px;
+      color: #616161; /* Slightly darker gray color for expertise details */
+    }
+    
+    .expertise li strong {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+</style>
+
+
+
 </head>
 <body>
   <div class="container">
@@ -85,6 +114,11 @@
       <h1>Resume - Mokshagna Talapaneni</h1>
     </div>
     <div class="grid">
+
+
+      <!-- from here left side of page contents will start -->
+
+
       <div class="left-column">
         <div class="profile-image">
           <!-- Placeholder for profile image -->
@@ -118,13 +152,34 @@
             <div class="skill-rating" data-rating="0">
             </div>
           </div>
-          
+          <div class="interests section">
+            <h2>Interests:</h2>
+            <p>Data science and quantum computing</p>
+            <h2>Hobbies:</h2>
+            <p>book reading, badminton</p>
+          </div>
+          <div class="expertise section">
+            <h2>Expertise:</h2>
+            <ul>
+              <li><strong>Programming Languages:</strong> Python</li>
+              <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+              <li><strong>Frameworks:</strong> Django</li>
+              <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+              <li><strong>Version Control:</strong> Git</li>
+              <li><strong>Data Visualization:</strong> Tableau</li>
+            </ul>
+          </div>
+               
         </div>
       </div>
+
+        <!-- from here right side of page contents will start -->
+
+
       <div class="right-column">
         <div class="summary section">
           <h2>Professional Summary:</h2>
-          <p> Computer Science graduate with a strong academic background in Computers and Mathematics. Eager to apply theoretical knowledge gained through coursework and projects to contribute effectively in a professional setting. Proficient in Web Development, Python, and Databases with a keen ability to learn and adapt quickly. Excellent communication, analytical, problem-solving skills coupled with a strong work ethic and a passion towards work. Seeking an opportunity to kickstart a successful career and make meaningful contributions.</p>
+          <p> Enthusiastic Computer Science graduate with a solid foundation in Computers and Mathematics. Eager to apply theoretical knowledge and practical skills to contribute effectively in a professional environment. Proficient in Web Development, Python, and Databases with a strong aptitude for learning new technologies. Excellent communication, analytical, and problem-solving skills complemented by a diligent work ethic. </p>
         </div>
         <div class="education section">
           <h2>Education:</h2>
@@ -135,17 +190,44 @@
         <div class="projects section">
           <h2>Projects:</h2>
           <div class="project-details">
-            <p>Working on a web-based chat application enabling users to join various forums and interact by sharing their thoughts and feelings. Leveraging HTML, CSS, JavaScript, and Bootstrap for frontend development, while employing MySQL for backend data management. Utilizing Django for seamless connectivity and robust integration between frontend and backend components.</p>
+            <p>Worked on a web-based chat application enabling users to join various forums and interact by sharing their thoughts and feelings. Leveraging HTML, CSS, JavaScript, and Bootstrap for frontend development, while employing MySQL for backend data management. Utilizing Django for seamless connectivity and robust integration between frontend and backend components.</p>
           </div>
         </div>
-        <div class="interests section">
-          <h2>Interests:</h2>
-          <p>Data science and quantum computing</p>
-          <h2>Hobbies:</h2>
-          <p>book reading, badminton</p>
+        <div class="projects section">
+          <h2>Development Courses:</h2>
+          <div class="project-details">
+            <h4>Web Development [Coursera]</h4>
+            <h4>Duration: September 2023 - December 2023</h4>
+            <p>Completed a comprehensive web development course on Coursera focusing on HTML, CSS, JavaScript, and Bootstrap. Acquired practical skills in building responsive and visually appealing web interfaces using modern web development technologies.</p>
+          </div>
+          <div class="project-details">
+            <h4>Python [Kaggle]</h4>
+            <h4>Duration: November 2023 - December 2023</h4>
+            <p>Completed an intensive Python programming course on Kaggle, mastering fundamental concepts and practical applications through hands-on projects and exercises.</p>
+          </div>
+          <div class="project-details">
+            <h4>Tableau Fundamentals [Tableau]</h4>
+            <h4>Duration: February 2024 - March 2024</h4>
+            <p>Completed a comprehensive Tableau Fundamentals course on Coursera, gaining proficiency in data visualization techniques, dashboard creation, and data analysis using Tableau software.</p>
+          </div>
+          </div>
+
         </div>
+
       </div>
     </div>
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
